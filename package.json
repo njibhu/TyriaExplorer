@@ -1,15 +1,12 @@
 {
   "name": "tyria-explorer",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Explore Guildwars2 .dat files",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/njibhu/TyriaExplorer.git"
-  },
+  "repository": "git+https://github.com/njibhu/TyriaExplorer.git",
   "author": "Njibhu <ev@njibhu.eu>",
   "license": "MIT",
   "bugs": {
@@ -19,14 +16,11 @@
   "devDependencies": {
     "DataStream.js": "git://github.com/kig/DataStream.js.git",
     "browserify": "^16.2.2",
-    "eslint": "^5.0.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-prettier": "^2.6.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-require-path-exists": "^1.1.8",
-    "eslint-plugin-standard": "^3.1.0",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-recommended": "^3.0.0",
+    "eslint-plugin-dependencies": "^2.4.0",
+    "eslint-plugin-prettier": "^2.6.2",
     "gulp": "^4.0.0",
     "gulp-watch": "^5.0.0",
     "jquery": "^3.3.1",
@@ -35,5 +29,6 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "w2ui": "1.4.3"
-  }
+  },
+  "main": "index.js"
 }

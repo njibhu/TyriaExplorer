@@ -1,0 +1,28 @@
+The three context are completely independant except for the localReader
+Each context is implemented as a singleton which have a openArchive method 
+and then the rest is hooked with the events
+
+FileBrowser
+
+  . FileBrowser instance that manage the rendering of everything there.
+  . It wraps the localReader and all the local variables
+  . handles the file tabs 
+
+
+  . Viewer are registered to the FileBrowser
+  . One viewer per file, it is responsible for dom control
+  . viewers have static names as ID
+  . tabs = baseId files
+  
+  Methods:
+   - openFile(baseId, viewerId=default)
+   - switchToViewer(baseId, viewerId)
+   - closeFile(baseId) -> boolean
+
+  Data:
+    files = {
+      [baseId] : {
+        viewers: {[viewer]: viewer},
+        context: {}
+      }
+    }
